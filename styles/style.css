@@ -9,6 +9,12 @@ div div {
   position: relative;
 }
 
+div div div{
+/* this sets the colour for the android  */
+/*  background: #A4CA39; */
+  background: royalblue;
+  position: relative;
+}
 .android{
 	height: 404px; width: 334px;
 	margin: 100px auto;
@@ -100,12 +106,12 @@ div div {
 .r_leg{
   /* this sets the position of the right leg of the android  */
   right: 40px;
-  bottom: -60px;
+  top: 40px;
 }
 .l_leg{
   /* this sets the position of the left leg of the android  */
   left: 40px;
-  bottom: -60px;
+  top: 40px;
 }
 .r_arm:hover{
   /* uses the pseudo class hover to allow for an action when moving
@@ -113,12 +119,25 @@ div div {
   transform: rotate(-30deg)
              translate(25px,6px);
   /*negative left and positive right, negative up and positive down*/
+  transition: transform 0.2s;
+  transition-timing-function: linear;
 }
 .l_arm:hover{
   transform: rotate(30deg)
              translate(-25px,6px);
+  transition: transform 0.2s;
+  transition-timing-function: linear;
 }
 .head:hover {
   -moz-transform: rotate(-5deg)
                   translate(-4px ,-8px);
+  -moz-transition: transform 0.2s;
+  -moz-transition-timing-function: linear;
+}
+.leg:hover{
+    /* attempt to make the android jump using css*/
+  transform: translate(0px, -30px);
+  -moz-transition: transform 0.1s;
+  -moz-transition-delay: 0.2s;
+
 }
