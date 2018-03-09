@@ -1,9 +1,11 @@
 div {
   margin: 0;
   padding: 0;}
+
 div div {
-  /* this sets the colour for the android  */
-  background: #A4CA39;
+/* this sets the colour for the android  */
+/*  background: #A4CA39; */
+  background: royalblue;
   position: relative;
 }
 
@@ -36,7 +38,7 @@ div div {
 .r_eye{
   right:50px;
 }
-/* this sets the shape of the antenors of the android  */
+/* this sets the shape of the antenna of the android  */
 .l_ant, .r_ant{
   width: 6px;
   height: 50px;
@@ -47,12 +49,14 @@ div div {
   -webkit-border-radius: 3px;
 }
 .l_ant{
+  /* this sets the position of the left antena of the android  */
   left: 50px;
   transform: rotate(-30deg);
   -webkit-transform: rotate(-30deg);
   -moz-transform: rotate(-30deg);
 }
 .r_ant{
+  /* this sets the position of the right antena of the android  */
   right: 50px;
   transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
@@ -68,6 +72,7 @@ div div {
   -webkit-border-radius: 0 0 25px 25px;
 }
 .l_arm, .r_arm{
+  /* this sets the shape of the arms of the android  */
   width: 50px;
   height: 150px;
   position: absolute;
@@ -75,13 +80,16 @@ div div {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
 }
-.r_arm{
+.l_arm{
+  /* this sets the position of the left arm of the android  */
   right: 228px;
 }
-.l_arm{
+.r_arm{
+  /* this sets the position of the right arm of the android  */
   left: 228px;
 }
 .l_leg, .r_leg{
+  /* this sets the shape of the legs of the android  */
   height: 200px;
   width: 50px;
   position: absolute;
@@ -90,10 +98,27 @@ div div {
   -webkit-border-radius: 0 0 25px 25px;
 }
 .r_leg{
+  /* this sets the position of the right leg of the android  */
   right: 40px;
   bottom: -60px;
 }
 .l_leg{
+  /* this sets the position of the left leg of the android  */
   left: 40px;
   bottom: -60px;
+}
+.r_arm:hover{
+  /* uses the pseudo class hover to allow for an action when moving
+     the mouse over an element*/
+  transform: rotate(-30deg)
+             translate(25px,6px);
+  /*negative left and positive right, negative up and positive down*/
+}
+.l_arm:hover{
+  transform: rotate(30deg)
+             translate(-25px,6px);
+}
+.head:hover {
+  -moz-transform: rotate(-5deg)
+                  translate(-4px ,-8px);
 }
