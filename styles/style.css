@@ -5,20 +5,21 @@ div {
 div div {
 /* this sets the colour for the android  */
 /*  background: #A4CA39; */
-  background: royalblue;
+  background: pink;
   position: relative;
 }
 
 div div div{
 /* this sets the colour for the android  */
 /*  background: #A4CA39; */
-  background: royalblue;
+  background: pink;
   position: relative;
 }
 .android{
 	height: 404px; width: 334px;
 	margin: 100px auto;
 }
+
 .head{
 /* this sets the shape of the head of the android  */
 	width: 220px; height: 100px;
@@ -139,5 +140,4 @@ div div div{
   transform: translate(0px, -30px);
   -moz-transition: transform 0.1s;
   -moz-transition-delay: 0.2s;
-
 }
